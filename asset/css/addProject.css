@@ -1,0 +1,98 @@
+h1 {
+  margin: 50px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.labelImage {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+  padding-right: 8px;
+}
+
+.labelImage label {
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chooseImage {
+  margin-top: 8px;
+  border-radius: 5px;
+  padding: 17.5px 20px;
+  border: 1px solid #b2abab;
+  background-color: #e4e4e4;
+  color: #b2abab;
+}
+
+.attach {
+  font-size: 22px;
+  margin: 10px 0 0 10px;
+}
+
+.container {
+  margin: 70px auto;
+  width: 500px;
+}
+
+.content {
+  padding: 50px;
+  background-color: white;
+}
+
+#project {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  width: 1000px;
+  height: 500px;
+}
+
+#card-project {
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: justify;
+}
+
+.card img {
+  border-radius: 10px;
+  height: 170px;
+  width: 366px;
+  object-fit: cover;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#delete,
+#edit {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 3px 70px;
+  font-size: 10px;
+}

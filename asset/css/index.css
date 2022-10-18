@@ -1,0 +1,83 @@
+#card {
+  margin: 90px auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.29);
+}
+
+.content {
+  width: 800px;
+  padding: 100px 0px 50px 50px;
+  text-align: justify;
+}
+
+#profil {
+  margin: 70px 50px;
+  border-radius: 10px;
+}
+
+#profil img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+#button {
+  background-color: black;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  padding: 5px 30px;
+  text-decoration: none;
+  margin: 20px 50px 30px 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.sosmed {
+  display: flex;
+  align-items: right;
+  font-size: 50px;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.project {
+  padding: 50px;
+  background-color: white;
+}
+
+.col {
+  margin: 100px auto;
+  width: 400px;
+  height: 500px;
+}
+
+#card-project {
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: justify;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.card-body a {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 3px 62px;
+  font-size: 10px;
+}

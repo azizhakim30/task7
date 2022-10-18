@@ -1,0 +1,21 @@
+form {
+  margin: 70px auto;
+  width: 500px;
+}
+
+form h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+Label {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+#submit {
+  margin-top: 20px;
+  margin-left: 85%;
+}
