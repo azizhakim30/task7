@@ -11,17 +11,17 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="asset/css/navbar.css" />
-    <link rel="stylesheet" href="asset/css/addProject.css" />
-    <script src="myproject.js"></script>
+    <link rel="stylesheet" href="../public/css/navbar.css" />
+    <link rel="stylesheet" href="../public/css/addProject.css" />
+    <script src="../public/js/myproject.js"></script>
     <title>Add My Project</title>
   </head>
   <body>
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="asset/image/logo.png" width="30" height="24" />
+        <a class="navbar-brand" href="/">
+          <img src="../public/image/logo.png" width="30" height="24" />
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -29,7 +29,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="index.html"
+                href="/"
                 style="font-weight: bold; font-size: 18px"
                 >Home</a
               >
@@ -38,14 +38,14 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="addProject.html"
+                href="/formProject"
                 style="font-size: 18px"
                 >Add Project</a
               >
             </li>
           </ul>
           <button class="btn btn-dark" type="button" style="font-size: 15px">
-            <a href="contact.html" style="text-decoration: none; color: white"
+            <a href="/contact" style="text-decoration: none; color: white"
               >Contact Me</a
             >
           </button>
@@ -58,19 +58,19 @@
     <h1>ADD MY PROJECT</h1>
     <div class="container">
       <div class="formMyproject">
-        <form onsubmit="addProject(event)">
+        <form action="/addProject" method="POST">
           <div>
             <label for="inputName">Project Name</label>
-            <input type="text" class="form-control" id="inputName" />
+            <input type="text" class="form-control" id="inputName" name="inputName"/>
           </div>
           <div class="row">
             <div class="col">
               <label for="inputStartDate">Start Date</label>
-              <input type="date" class="form-control" id="inputStartDate" />
+              <input type="date" class="form-control" id="inputStartDate" name="inputStartDate"/>
             </div>
             <div class="col">
               <label for="inputEndDate">End Date</label>
-              <input type="date" class="form-control" id="inputEndDate" />
+              <input type="date" class="form-control" id="inputEndDate" name="inputEndDate"/>
             </div>
           </div>
 
@@ -78,6 +78,7 @@
             <label for="inputDesc">Description</label>
             <textarea
               id="inputDesc"
+              name="inputDesc"
               class="form-control"
               cols="30"
               rows="10"
@@ -92,8 +93,9 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  id="checkboxNodejs"
-                  name="checkboxNodejs"
+                  id="checkboxNodeJs"
+                  name="checkboxNodeJs"
+                  value="checkboxNodeJs"
                 />
                 <label class="form-check-label" for="checkboxNodejs">
                   Node Js
@@ -106,6 +108,7 @@
                   type="checkbox"
                   id="checkboxReactJs"
                   name="checkboxReactJs"
+                  value="checkboxReactJs"
                 />
                 <label class="form-check-label" for="checkboxReactJs">
                   React Js
@@ -120,6 +123,7 @@
                   type="checkbox"
                   id="checkboxJavaScript"
                   name="checkboxJavaScript"
+                  value="checkboxJavaScript"
                 />
                 <label class="form-check-label" for="checkboxJavaScript">
                   JavaScript
@@ -131,6 +135,7 @@
                   type="checkbox"
                   id="checkboxVueJs"
                   name="checkboxVueJs"
+                  value="checkboxVueJs"
                 />
                 <label class="form-check-label" for="checkboxVueJs">
                   Vue Js
@@ -165,7 +170,32 @@
         MY PROJECT
       </h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col" id="project"></div>
+        <div class="col" id="project">
+        <div class='card' id='card-project'>
+          <img src="../public/image/webApp.jpg" class='card-img-top' />
+          <div class='card-body'>
+            <h5 class='card-title'><a href="/detailProject/0">Pasar Coding</a></h5>
+            <p class='card-text'>
+              <small class='text-muted'>durasi : 1 day ago</small>
+            </p>
+            <p class='card-text'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, autem nostrum. Nihil fugiat voluptatum ipsam dicta voluptas recusandae quod iste inventore. A ipsa beatae mollitia esse, facilis dolore hic praesentium!
+            </p>
+            <div class='icons'>
+              <i class="fa-brands fa-node-js"></i>'   
+              <i class="fa-brands fa-react"></i>'
+              <i class="fa-brands fa-js"></i></i>'
+              <i class="fa-brands fa-vuejs"></i>'
+            </div>
+            <a href='#' class='btn btn-dark' id="edit">
+              Edit
+            </a>
+            <a href='#' class='btn btn-dark' id="delete">
+              delete
+            </a>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
     <!-- End Contect -->

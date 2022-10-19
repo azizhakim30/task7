@@ -123,9 +123,9 @@ function renderCard() {
         <div class='card' id='card-project'>
           <img src="${projects[i].image}" class='card-img-top' />
           <div class='card-body'>
-            <h5 class='card-title'><a href="detailProject.html?${
+            <h5 class='card-title'><a href="/detailProject/0">${
               projects[i].title
-            }">${projects[i].title}</a></h5>
+            }</a></h5>
             <p class='card-text'>
               <small class='text-muted'>durasi : ${duration}</small>
             </p>
